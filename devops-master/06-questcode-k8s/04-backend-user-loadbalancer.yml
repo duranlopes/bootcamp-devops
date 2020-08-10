@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-user
+  namespace: staging
+  labels:
+    app: backend-user
+spec:
+  type: LoadBalancer
+  selector:
+    app: backend-user
+  ports:
+    - port: 3020
+      protocol: TCP
+      targetPort: 3020

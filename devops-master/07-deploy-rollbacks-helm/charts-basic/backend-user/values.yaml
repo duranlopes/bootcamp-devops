@@ -1,0 +1,11 @@
+image:
+  repository: duran750/backend-user
+  tag: alpha
+
+service:
+  nodePort: 30020
+
+container:
+  port: 3020
+  
+replicas: 2

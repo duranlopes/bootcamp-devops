@@ -1,0 +1,11 @@
+image:
+  repository: duran750/frontend
+  tag: alpha-staging
+
+service:
+  nodePort: 30080
+
+container:
+  port: 80
+  
+replicas: 2

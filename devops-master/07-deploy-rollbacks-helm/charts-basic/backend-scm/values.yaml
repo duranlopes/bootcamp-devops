@@ -1,0 +1,11 @@
+image:
+  repository: duran750/backend-scm
+  tag: alpha
+
+service:
+  nodePort: 30030
+
+container:
+  port: 3030
+  
+replicas: 2

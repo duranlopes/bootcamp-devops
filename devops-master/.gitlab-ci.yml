@@ -1,0 +1,14 @@
+stages:
+    - update
+  
+deploy:
+  stage: update
+  only:
+    - master
+  tags:
+    - master
+  script:
+    - cd /home/gitlab-runner/devops
+    - git pull
+  
+  

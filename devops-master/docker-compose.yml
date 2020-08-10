@@ -1,0 +1,14 @@
+version: '3'
+services:
+    scm:
+        image: "duran750/backend-scm:alpha"
+        ports:
+            - "3030:3030"
+    user:
+        image: "duran750/backend-user:alpha"
+        ports:
+            - "3020:3020"
+    frontend:
+        image: "duran750/frontend:alpha"
+        ports:
+            - "80:80"
